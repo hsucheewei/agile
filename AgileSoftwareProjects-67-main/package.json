@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build-db",
+    "build-db": "sqlite3 database.db < db_schema.sql",
+    "clean-db": "del database.db",
     "start": "node index.js"
   },
   "author": "Simon Katan",
